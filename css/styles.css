@@ -844,3 +844,75 @@ body {
    top: 16%;
    right: 26%;
 }
+
+/*CLIENTS*/
+.layout__clients {
+   position: relative;
+   background-color: var(--color-bg-dark);
+   padding: 14rem 10rem;
+   padding-bottom: 10rem;
+   z-index: 1;
+}
+
+.clients__container {
+   max-width: var(--mx-width);
+   margin: 0 auto;
+}
+
+.clients__header {
+   text-align: left;
+}
+
+.clients__subtitle {
+   font-size: 2rem;
+   font-weight: 500;
+   color: var(--color-subtitle);
+   margin-bottom: 1.5rem;
+}
+
+.clients__title {
+   width: 50%;
+   font-size: 6.4rem;
+   font-weight: 500;
+   line-height: 1.2;
+   color: var(--color-secondary);
+   margin-bottom: 3rem;
+}
+
+.clients__description {
+   font-size: 2rem;
+   width: 40%;
+   margin-bottom: 6rem;
+   color: var(--color-text-description);
+}
+
+.clients__logos {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   gap: 3rem;
+   justify-content: space-around;
+}
+
+.clients__item {
+   flex-basis: calc(25% - 3rem);
+}
+
+.clients__img {
+   filter: grayscale(100%);
+   opacity: 0.4;
+   transition: all var(--tran-0-3) ease-in-out;
+}
+
+.clients__item:hover > .clients__img {
+   filter: grayscale(0);
+   opacity: 1;
+   cursor: pointer;
+}
+
+.client-shapes__item {
+   position: absolute;
+   z-index: -1;
+   top: 10%;
+   right: 0;
+}
