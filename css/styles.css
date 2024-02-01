@@ -1062,3 +1062,147 @@ body {
    bottom: 6rem;
    right: 18rem;
 }
+
+/*CONTACT*/
+.layout__contact {
+   position: relative;
+   padding: 0;
+   padding-top: 14rem;
+   padding-bottom: 10rem;
+   overflow: hidden;
+   z-index: 1;
+}
+
+/*Efecto linea blanca*/
+.layout__contact::before {
+   content: "";
+   position: absolute;
+   width: 100%;
+   height: 65rem;
+   top: 0;
+   left: 0;
+   right: 0;
+   background-color: var(--color-primary);
+   z-index: -1;
+}
+
+.contact__container {
+   max-width: var(--mx-width);
+   margin: 0 auto;
+}
+
+.contact__header {
+   margin-bottom: 6rem;
+   text-align: center;
+}
+
+.contact__subtitle {
+   display: inline-block;
+   font-size: 2rem;
+   font-weight: 500;
+   color: var(--color-btn-hover);
+   margin-bottom: 1.5rem;
+}
+
+.contact__title {
+   width: 70%;
+   margin: 0 auto;
+   margin-bottom: 5.5rem;
+   font-size: 6.4rem;
+   font-weight: 500;
+   line-height: 1.2;
+   color: var(--color-secondary);
+}
+
+.contact__btn {
+   display: inline-block;
+   position: relative;
+   padding: 2.3rem 5rem;
+   border: 2px solid var(--color-text-btn);
+   background-color: var(--color-secondary);
+   border-radius: 20px;
+   font-weight: 500;
+   text-align: center;
+   overflow: hidden;
+   z-index: 1;
+   transition: all var(--tran-0-3) ease-in-out;
+}
+
+.contact__btn:hover {
+   background-color: var(--color-btn-hover);
+}
+
+.contact__images {
+   position: relative;
+   text-align: center;
+   border-bottom: 1px solid var(--color-borders);
+}
+
+.contact__thumb {
+   position: relative;
+   display: inline-block;
+}
+
+.contact__thumb--chat {
+   margin-right: -18rem;
+   margin-bottom: -0.7rem;
+}
+
+.contact__thumb--lap {
+   position: absolute;
+   bottom: 0;
+   left: 16rem;
+}
+
+.contact__thumb--movil {
+   position: absolute;
+   bottom: 0;
+   right: 8rem;
+}
+
+.backshapes__item {
+   position: absolute;
+   z-index: -1;
+}
+
+.backshapes--shapes1 {
+   top: 0;
+   left: 32%;
+}
+
+.backshapes--shapes2 {
+   top: 18rem;
+   left: 18%;
+   opacity: 0.5;
+   animation: moveShape3 20s infinite;
+}
+
+.backshapes--shapes3 {
+   top: 31%;
+   left: 20%;
+   animation: moveShape4 25s infinite;
+}
+
+.backshapes--shapes4 {
+   top: 44%;
+   left: 33%;
+   animation: moveShape3 30s infinite;
+}
+
+.backshapes--shapes5 {
+   top: 40%;
+   right: 22%;
+   animation: moveShape4 20s infinite;
+}
+
+.backshapes--shapes6 {
+   top: 26%;
+   right: 21%;
+   animation: moveShape5 30s infinite;
+}
+
+.backshapes--shapes7 {
+   top: 30%;
+   right: 15%;
+   animation: moveShape3 35s infinite;
+}
