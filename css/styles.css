@@ -600,6 +600,10 @@ body {
    gap: 4rem 7rem; /*espaciado entre columnas*/
 }
 
+.projects__project {
+   flex-basis: calc(50% - 3.5rem);
+}
+
 .project__container-img {
    width: 100%;
    border-radius: 30px 30px 0 0;
