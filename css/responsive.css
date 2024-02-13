@@ -115,6 +115,10 @@
         display: none;
     }
 
+    .navbar__mobile-btn {
+        display: block;
+     }     
+
     .banner__header {
         width: 65%;
     }
