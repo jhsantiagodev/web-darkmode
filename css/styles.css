@@ -30,7 +30,7 @@
 }
 
 html {
-   font-size: 10px;
+   font-size: 62.5%; /*10px*/
    overflow-x: hidden;
 }
 
@@ -1569,4 +1569,37 @@ body {
    text-transform: capitalize;
    font-weight: 500;
    color: var(--color-text-body);
+}
+
+/*btn darkkmode*/
+.switcher {
+   position: fixed;
+   top: 20rem;
+   left: 0;
+   background-color: var(--color-primary);
+   border-radius: 0 3rem 3rem 0;
+   padding: 1rem;
+   z-index: 5;
+}
+
+.switcher__btn {
+   cursor: pointer;
+   background-color: transparent;
+   border: none;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.switcher__icon-light,
+.switcher__icon-dark {
+   color: var(--color-secondary);
+   font-size: 2rem;
+   height: 4rem;
+   width: 4rem;
+   line-height: 3.6rem;
+}
+
+.switcher__icon-dark {
+   display: none;
 }
